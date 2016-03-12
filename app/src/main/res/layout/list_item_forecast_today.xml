@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_icon"
+            android:src="@drawable/art_clear"
+            android:layout_weight="0"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_forecast_textview"
+            android:text="Forecast Text"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0"
+            android:layout_below="@+id/list_item_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_date_textview"
+            android:text="Date"
+            android:layout_below="@+id/list_item_icon"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_high_textview"
+            android:text="High"
+            android:layout_below="@+id/list_item_forecast_textview"
+            android:layout_toLeftOf="@+id/list_item_icon"
+            android:layout_toStartOf="@+id/list_item_icon"
+            android:layout_marginTop="31dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_item_low_textview"
+            android:text="Low"
+            android:layout_alignTop="@+id/list_item_high_textview"
+            android:layout_alignRight="@+id/list_item_icon"
+            android:layout_alignEnd="@+id/list_item_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
